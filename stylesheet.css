@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Start Stylesheet */
+
+body{
+    font-size: 26px;
+    font-family: 'Poiret One',
+    cursive;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+    color: white;
+    background-color: black;
+
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+header > h2{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+header > h6{
+    display: block;
+    position: absolute;
+    top: 30px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    position: absolute;
+    top: 11%;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.wrapper ul{
+    display: block;
+    padding-top: 0em;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+}
+
+.calc{
+    display: flex;
+    position: absolute;
+    top: 25%;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+    width: 100%;
+}
+
+.calc label{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right: 55%;
+}
+
+.results-box{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    margin: auto;
+
+}
+
+.results-box .planets  .col-1{
+    line-height: 1.5em;
+    padding: 2px;
+    margin: 55px;
+}
+
+.results-box > .planets{
+    display: flex;
+    padding-bottom: 2em;
+    text-align: center;
+    position: absolute;
+    justify-content: space-evenly;
+    top: -1.5em;
+}
+
+.img:hover{
+    transform: translateY(-10px);
+
+}
+
+.earth .img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-image: url('https://images.vexels.com/media/users/3/157971/isolated/lists/393140c13ded6abdd322098d2d02a6d7-earth-planet-illustration.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 250ms;
+}
+
+.moon .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+    padding-top: 25px;
+    background-image: url('https://img.icons8.com/cotton/2x/moon-satellite.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mars .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+    padding-top: 2px;
+    background-image: url('https://images.vexels.com/media/users/3/205472/isolated/preview/62c3ddcae4b835271eb633cb80c8c797-planet-mars-illustration-by-vexels.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.venus .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+    padding-top: 25px;
+    background-image: url('https://images.vexels.com/media/users/3/205478/isolated/preview/4a42dba3e55a9bcc9764720d87f2ca93-planet-venus-illustration-by-vexels.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mercury .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+    padding-top: 25px;
+    background-image: url('https://images.vexels.com/media/users/3/205473/isolated/lists/8248c00ffcf15106da21d9a8e03fb292-planet-mercury-illustration.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.uranus .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+    padding-top: 25px;
+    background-image: url('https://images.vexels.com/media/users/3/205477/isolated/lists/65bf7bfb23e192debb56168ca3e6e4e0-planet-uranus-illustration.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.saturn .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+    padding-top: 25px;
+    background-image: url('https://images.vexels.com/media/users/3/205476/isolated/lists/56e1687ae914c14cb0ed474f0982f45f-planet-saturn-illustration.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.jupiter .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 55px;
+    padding-top: 25px;
+    background-image: url('https://images.vexels.com/media/users/3/205471/isolated/lists/7591a6a3860eda2a1b4909b2bac023ba-planet-jupiter-illustration.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.neptune .img {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    background-image: url('https://images.vexels.com/media/users/3/203296/isolated/preview/6bb35250c67c068b44e2aac95775050e-neptune-planet-illustration-by-vexels.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+}
+
+
+@media screen and (max-width: 1400px){
+    body{
+        font-size: 14px;
+    }
+
+    .calc label{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer{
+        visibility: hidden;
+    }
+}
