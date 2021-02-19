@@ -1,4 +1,3 @@
-# caution: desktop optimized
 
 # weight-on-other-planets
 A simple, quick fun project to practice my JS. Input a weight in lbs, displays the result under the planets <br>
